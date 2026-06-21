@@ -4,5 +4,11 @@ export interface RegisterRequest {
     email:string;
     password :string;
     mobileNumber:string;
-    aadhaarNumber :string;
+    role :string ;
+    gender :string;
+    city :string;
+    state : string;
+    pincode : string;
+    aadhaarNumber : string;
+    street : string;
 }

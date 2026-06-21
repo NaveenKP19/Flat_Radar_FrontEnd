@@ -1,0 +1,99 @@
+.container {
+  text-align: center;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Full screen container to center the content perfectly */
+.screen-wrapper {
+  background-color: #1a1a2e; /* Dark theme background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Centered content box */
+.content-box {
+  text-align: center;
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Hardcoded pure CSS/HTML Icon */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border: 5px dashed #f5a623; /* Construction dashed look */
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gear-center {
+  width: 20px;
+  height: 20px;
+  background-color: #f5a623;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 28px;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+p {
+  font-size: 16px;
+  color: #a0a0b0;
+  margin: 0 0 30px 0;
+}
+
+.btn {
+  background-color: #3f51b5;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #303f9f;
+}

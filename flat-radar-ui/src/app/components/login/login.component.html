@@ -1,4 +1,4 @@
-<h1>Login Form</h1>
+<!-- <h1>Login Form</h1>
 
 <input
     type="email"
@@ -16,4 +16,122 @@
 
 <button (click)="loginUser()">
     Login
-</button>
+</button> -->
+<div class="login-container">
+
+    <div class="login-card">
+
+        <div class="logo">
+
+            <h1>Flat-Radar</h1>
+
+            <p>Find Your Perfect Home</p>
+
+        </div>
+
+        <h2>Welcome Back 👋</h2>
+
+        <p class="subtitle">
+            Login to continue to your account
+        </p>
+
+        <form [formGroup]="loginForm"
+              (ngSubmit)="loginUser()">
+
+            <!-- EMAIL -->
+
+            <div class="input-group">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    formControlName="email"
+                    [class.invalid]="f['email'].touched && f['email'].invalid">
+
+                <small
+                    class="error"
+                    *ngIf="f['email'].touched && f['email'].errors?.['required']">
+
+                    Email is required.
+
+                </small>
+
+                <small
+                    class="error"
+                    *ngIf="f['email'].touched && f['email'].errors?.['email']">
+
+                    Enter a valid email address.
+
+                </small>
+
+            </div>
+
+            <!-- PASSWORD -->
+
+            <div class="input-group">
+
+                <label>Password</label>
+
+                <div class="password-box">
+
+                    <input
+                        [type]="showPassword ? 'text' : 'password'"
+                        placeholder="Enter your password"
+                        formControlName="password"
+                        [class.invalid]="f['password'].touched && f['password'].invalid">
+
+                    <button
+                        type="button"
+                        class="eye-btn"
+                        (click)="togglePassword()">
+
+                        {{ showPassword ? 'Hide' : 'Show' }}
+
+                    </button>
+
+                </div>
+
+                <small
+                    class="error"
+                    *ngIf="f['password'].touched && f['password'].errors?.['required']">
+
+                    Password is required.
+
+                </small>
+
+                <small
+                    class="error"
+                    *ngIf="f['password'].touched && f['password'].errors?.['minlength']">
+
+                    Password must be at least 8 characters.
+
+                </small>
+
+            </div>
+
+            <button
+                type="submit"
+                class="login-btn"
+                [disabled]="loginForm.invalid">
+
+                Login
+
+            </button>
+
+        </form>
+
+        <p class="register-link">
+
+            Don't have an account?
+
+            <a routerLink="/register">
+                Register
+            </a>
+
+        </p>
+
+    </div>
+
+</div>

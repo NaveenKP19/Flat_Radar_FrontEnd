@@ -1,1 +1,76 @@
-<p>dashboard works!</p>
+<!-- <p> <strong> First Name: </strong> {{user.firstName}}</p>
+
+<p><strong>Last Name :</strong>{{user.lastName}}</p>
+
+<p><strong> Email :</strong> {{user.email}}</p> -->
+
+
+<div class="dashboard-container">
+
+    <!-- Welcome Banner -->
+
+    <div class="welcome-card">
+
+        <div class="profile-image">
+            {{user.firstName.charAt(0)}}{{user.lastName.charAt(0)}}
+        </div>
+
+        <div class="welcome-text">
+            <h1>Welcome, {{user.firstName}} 👋</h1>
+            <p>Manage your flats, tenants and profile from your dashboard.</p>
+        </div>
+
+    </div>
+
+    <!-- User Information -->
+
+    <div class="profile-card">
+
+        <h2>My Profile</h2>
+
+        <div class="profile-details">
+
+            <div class="detail-box">
+                <h4>First Name</h4>
+                <p>{{user.firstName}}</p>
+            </div>
+
+            <div class="detail-box">
+                <h4>Last Name</h4>
+                <p>{{user.lastName}}</p>
+            </div>
+
+            <div class="detail-box">
+                <h4>Email</h4>
+                <p>{{user.email}}</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Dashboard Cards -->
+
+    <div class="dashboard-cards">
+
+        <div class="card">
+            <h2>🏠 My Flats</h2>
+            <p>Manage all your flats from one place.</p>
+            <button>View Flats</button>
+        </div>
+
+        <div class="card">
+            <h2>👨‍👩‍👧 Tenants</h2>
+            <p>See all registered tenants.</p>
+            <button>View Tenants</button>
+        </div>
+
+        <div class="card">
+            <h2>➕ Add Flat</h2>
+            <p>Add a new flat for rent or sale.</p>
+            <button>Add Flat</button>
+        </div>
+
+    </div>
+
+</div>

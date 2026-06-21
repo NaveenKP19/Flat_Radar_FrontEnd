@@ -1,0 +1,72 @@
+<nav class="navbar">
+
+    <div class="nav_left">
+        <h2>🏠 Flat Radar</h2>
+    </div>
+
+    <div class="nav_center">
+
+        <a routerLink="/home">Home</a>
+
+        <a routerLink="/PageNotFound">My Flats</a>
+
+        <a routerLink="/PageNotFound">All Tenants</a>
+
+        <a routerLink="/PageNotFound">About</a>
+
+        <a routerLink="/PageNotFound">Contact</a>
+
+    </div>
+
+    <!-- <div class="nav_right">
+
+        <button class="profile-btn" routerLink="/dashboard">
+            My Profile
+        </button>
+
+        <button class="logout-btn" (click)="logout()">
+            Logout
+        </button>
+
+    </div> -->
+
+    <div class="nav_right">
+
+    <!-- Profile Button (User Icon) -->
+    <button class="profile-btn" routerLink="/dashboard" aria-label="My Profile">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+    </button>
+
+    <!-- Logout Button (Power/Exit Icon) -->
+    <button class="logout-btn" (click)="logout()" aria-label="Logout">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+        </svg>
+    </button>
+
+</div>
+
+
+    <div class="popup-overlay" *ngIf="showPopup">
+
+        <div class="popup-box">
+            <div class="icon">
+                ⚠️
+            </div>
+
+            <h2>Logout</h2>
+            <p>Are you sure you want to Logout?</p>
+            <div class="popup-buttons">
+                <button class="cancel-btn" (click)="closePopup()">Cancel</button>
+                <button class="coinform-btn" (click)="confirmLogout()">Logout</button>
+
+            </div>
+        </div>
+    </div>
+
+</nav>
