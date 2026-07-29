@@ -6,7 +6,7 @@ import { AuthService } from 'src/app/services/auth.service';
   selector: 'app-dashboard',
   standalone :false,
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
 
